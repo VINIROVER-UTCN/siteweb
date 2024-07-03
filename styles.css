@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #800000; /* Burgundy color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+/* Logo Styles */
+header .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('images/vineyard.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Features Section Styles */
+.features {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature {
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* About, Specs, Funding, and Contact Sections Styles */
+.about, .specs, .funding, .contact {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about img, .specs img, .funding img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #800000; /* Burgundy color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #990000; /* Dark burgundy color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #800000; /* Burgundy color */
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem; /* Reduced size for the "All rights reserved" section */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+}
